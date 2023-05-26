@@ -8,9 +8,9 @@ import Hero from '../types/hero.type';
 export class HeroesListComponent implements OnInit {
 
   heroes: Hero[] =[
-    {id : 1 , name : 'BatMan'},
-    {id : 2 , name : 'SuperMan'},
-    {id : 3 , name : 'SpiderMan'},
+    {id : 1 , name : 'BatMan', superPower:'Money'},
+    {id : 2 , name : 'SuperMan', superPower:'SuperStrength'},
+    {id : 3 , name : 'SpiderMan', superPower:'Spider Senses'},
   ]
 
   constructor() { }
