@@ -1,5 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
+body {
+    background-color: dodgerblue;
+}
+
 header {
     display :block;
     margin-left: auto;
@@ -9,6 +13,7 @@ header {
     height:10%;
     width:50%;
     border-radius: 30px;
+    border: 2px solid yellow;
 }
 h1 {
     color: #369;
