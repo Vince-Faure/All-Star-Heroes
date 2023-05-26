@@ -1,9 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
+header {
+    display :block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+    text-align: center;
+    height:10%;
+    width:50%;
+    border-radius: 30px;
+}
 h1 {
     color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
+    font-family: Impact,  'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    font-weight: 1;
+    font-size: 400%;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1px yellow;
     }
     h2, h3 {
     color: #444;
@@ -11,7 +24,7 @@ h1 {
     font-weight: lighter;
     }
     body {
-    margin: 2em;
+    margin: "0px";
     }
     body, input[type="text"], button {
     color: #888;
