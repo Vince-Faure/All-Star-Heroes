@@ -1,10 +1,8 @@
 <ul class="vilains">
   <li *ngFor="let vilain of vilains" [class.selected]="selectedVilain == vilain" (click)="selectVilain(vilain)"><span class="badge">{{ vilain.id }}</span> {{ vilain.name
-  }} <span class="power">{{vilain.superPower}}</span></li>
+  }}</li>
   </ul>
-  <div *ngIf="selectedVilain">
-    <h2>Détails de {{ selectedVilain.name | uppercase}}</h2>
-    <div>
-      <span>Real Name : </span>{{ selectedVilain.realName}}
-    </div>
+  <div class="vdetails">
+<app-vilain-details *ngIf="selectedVilain" [vilain]="selectedVilain"></app-vilain-details>
   </div>
+  
