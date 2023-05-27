@@ -8,12 +8,18 @@ import Hero from '../types/hero.type';
 export class HeroesListComponent implements OnInit {
 
   heroes: Hero[] =[
-    {id : 1 , name : 'BatMan', superPower:'Money'},
-    {id : 2 , name : 'SuperMan', superPower:'SuperStrength'},
-    {id : 3 , name : 'SpiderMan', superPower:'Spider Senses'},
+    {id : 1 , name : 'BatMan', superPower:'Money', realName : 'Bruce Wayne'},
+    {id : 2 , name : 'SuperMan', superPower:'SuperStrength', realName : 'Clark Kent'},
+    {id : 3 , name : 'Wonderwoman', superPower:'Demi Goddess', realName : 'Diana Prince'},
   ]
 
+  selectedHero: Hero;
+
   constructor() { }
+
+  selectHero(hero: Hero){
+    this.selectedHero = hero;
+  }
 
   ngOnInit() {
   }

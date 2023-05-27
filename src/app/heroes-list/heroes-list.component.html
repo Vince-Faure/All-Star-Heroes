@@ -1,4 +1,9 @@
 <ul class="heroes">
-  <li *ngFor="let hero of heroes"><span class="badge">{{ hero.id }}</span> {{ hero.name
-  }} <span class="power">{{hero.superPower}}</span></li>
-  </ul>
+  <li *ngFor="let hero of heroes" [class.selected]="selectedHero == hero" (click)="selectHero(hero)"><span
+      class="badge">{{ hero.id }}</span> {{ hero.name
+    }} <span class="power">{{hero.superPower}}</span></li>
+</ul>
+<div *ngIf="selectedHero">
+  <h2>Détails de {{selectedHero.name | uppercase}} : </h2>
+  <div><span>Real Name : </span>{{selectedHero.realName}}</div>
+  </div>
