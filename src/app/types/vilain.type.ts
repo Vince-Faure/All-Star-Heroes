@@ -3,4 +3,6 @@ export default class Vilain {
     name : string;
     superPower: string;
     realName : string;
+    picturePath: string ;
+
 }
