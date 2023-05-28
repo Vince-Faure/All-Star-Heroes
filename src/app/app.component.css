@@ -29,6 +29,9 @@
     /*teille*/
     width: 48%;
     height: 95%;
+    /*affichage
+    display: flex;
+    flex-direction: row;*/
     /*centrage*/
     margin: auto;
     /*contenu*/
