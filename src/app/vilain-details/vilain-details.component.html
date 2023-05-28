@@ -1,6 +1,12 @@
-<div id="detailsVilain">
-  <h2>Détails de {{vilain.name | uppercase }} :</h2>
-  <div><span>Real Name : </span>{{vilain.realName}}</div>
-  <div><span>Powers : </span>{{vilain.superPower}}</div>
-  <div><span> <img src={{vilain.picturePath}} alt="none"></span></div>
+<div id="detailsVilain" >
+  <div id="sideInfo">
+    <h2>Détails de {{vilain.name | uppercase}} : </h2>
+    <div id="textReferences">
+      <div><span>Real Name : </span>{{vilain.realName}}</div>
+      <div><span>Powers : </span>{{vilain.superPower}}</div>
+    </div>
+  </div>
+  <div id="sidePicture">
+     <img id="heroPicture" src={{vilain.picturePath}} alt="none">
+  </div>
 </div>
