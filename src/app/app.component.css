@@ -1,0 +1,38 @@
+#mainBox{
+    display: flex;
+    flex-direction: column !important;
+    /*Taille*/    
+    width: 80%;
+    height: 600px;
+    /*centrage du mainbox*/
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    /*contenu*/
+    background-color: aquamarine;
+    }
+    #upBox, #downBox{
+    /*taille*/
+    width:98%;
+    height: 45%;
+    /*centrage des up\downBox*/
+    margin-left: auto;
+    margin-right: auto;
+    /*affichage*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    /*contenu*/
+    border: 2px solid rgb(188, 235, 17);
+    }
+    
+    #upLeftBox, #upRightBox {
+    /*teille*/
+    width: 48%;
+    height: 95%;
+    /*centrage*/
+    margin: auto;
+    /*contenu*/
+    border: 2px solid red;
+    
+    }

@@ -1,25 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
-body {
-    background-color: dodgerblue;
+*{
+    margin: 0;
+    padding: 0;
 }
+body {
+     background-color: blue;;
+    }
+body, input[type="text"], button {
+    color: #888;
+    font-family: Cambria, Georgia;
+    }
 
 header {
-    display :block;
+/*Taille*/
+    width: 80%;
+    height: 25%;
+/*centrage du header*/
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    background-color: red;
+/*contenu*/
     text-align: center;
-    height:10%;
-    width:50%;
-    border-radius: 30px;
+    background-color: red;
     border: 2px solid yellow;
+    border-radius: 30px;
 }
 h1 {
     color: #369;
-    font-family: Impact,  'Arial Narrow Bold', sans-serif, Helvetica, sans-serif;
+    font-family: Impact;
     font-weight: 1;
-    font-size: 4em;
+    font-size: 500%;
     letter-spacing: 5px;
     -webkit-text-stroke: 1px yellow;
     }
@@ -28,13 +39,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     }
-    body {
-    margin: "0px";
-    }
-    body, input[type="text"], button {
-    color: #888;
-    font-family: Cambria, Georgia;
-    }
+
     a {
     margin-top: 20px;
     font-family: Arial;
@@ -51,6 +56,7 @@ h1 {
     a:hover {
     background-color: #cfd8dc;
     }
+    
 
     /* everywhere else */
     * {
