@@ -12,7 +12,7 @@ export class HeroesListComponent implements OnInit {
   heroes: Hero[] =[
     {id : 1 , name : 'BatMan', superPower:'Money', realName : 'Bruce Wayne'},
     {id : 2 , name : 'Deadpool', superPower:'UnKillable', realName : 'Wayde Wilson'},
-    {id : 3 , name : 'the Wasp', superPower:'Size Manipulation', realName : 'Janet van Dyne'},
+    {id : 3 , name : 'Storm', superPower:'Weather Witch', realName : 'Ororo Munroe'},
     {id : 4 , name : 'Punisher', superPower:'Abnormally Pain Tolerance ', realName :'Franck Castle'}
   ]
 
