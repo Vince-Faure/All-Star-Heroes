@@ -32,6 +32,8 @@ h2{
 
 
 
+
+
 /*--Left Side box/Right Side box_Sizing*/
 #sideInfo, #sidePicture{
     width: 100%;
@@ -64,7 +66,7 @@ font-size: x-large;
 
 #heroPicture{
     justify-content: center;
-    max-width :300px;
+    max-width :100%;
     height : auto;
     border: 2px solid yellow;
     border-radius: 25px;

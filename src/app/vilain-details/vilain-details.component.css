@@ -60,8 +60,8 @@ h2{
 
 #vilainPicture{
     justify-content: center;
-    max-width :300px;
-    min-width: 50px;
+    max-width :100%;
+    
     height : auto;
     border: 2px solid yellow;
     border-radius: 25px;
