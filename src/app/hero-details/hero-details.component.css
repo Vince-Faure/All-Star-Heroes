@@ -48,7 +48,7 @@ h2{
 font-family: 'RoBoto-Regular';
 margin: 20px;
 color:white;
-font-size: larger;
+font-size: x-large;
 }
 
 
@@ -58,14 +58,16 @@ font-size: larger;
 
     display:flex;
     justify-content:center;
-    align-items:center
+    align-items:center;
+    
 }
 
 #heroPicture{
     justify-content: center;
     max-width :300px;
     height : auto;
-
+    border: 2px solid yellow;
+    border-radius: 25px;
 }
 
 
