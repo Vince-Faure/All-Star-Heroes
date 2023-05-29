@@ -1,8 +1,19 @@
 /* HeroesComponent's private CSS styles */
+@font-face {
+    font-family: 'Play-Bold';
+    src: url('/assets/fonts/Play-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Play-Regular';
+    src: url('/source/assets/fonts/Play-Regular.ttf');
+  }
 
 /*--Title--*/
 
 h2 {
+    font-family: 'Play-Bold';
+    font-size: xx-large;
     color: white;
     width: 100%;
     height: 5%;
@@ -57,7 +68,7 @@ h2 {
 
     /*content*/
     background-color: rgb(44, 44, 131);
-    border: 2px solid rgb(255, 217, 0);
+    border: 4px solid rgb(255, 217, 0);
     border-radius: 13px;
     color: white;
 
@@ -67,8 +78,9 @@ h2 {
 
 .heroes li.selected {
     /*--background color change & font color change*/
-    background-color: rgb(48, 47, 80);
+    background-color: rgb(68, 64, 194);
     color: rgb(255, 217, 0);
+    border-color:rgba(255, 217, 0,0.6) ;
 }
 
 .heroes li:hover {
@@ -92,22 +104,28 @@ h2 {
     margin-bottom: auto;
 
     /*--Content--*/
+    
+    border: yellow 2px solid;
     background-color: #f80000;
 }
 
 #heroId {
     /*--font attribute*/
+    font-family:'Play-Bold' ;
     font-size: x-large;
     color: yellow;
 
 }
 
 #heroTitle {
+    font-family:'Play-Regular' ;
+    font-size: xx-large;
+    
     /*--Sizing--*/
     width: 90%;
     /*--Centering--*/
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center
 }
 

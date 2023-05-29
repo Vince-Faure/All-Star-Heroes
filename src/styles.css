@@ -1,14 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 /* Application-wide Styles */
-@font-face {
-    font-family: 'Play-Bold';
-    src: url('/source/assets/fonts/Play-Bold.ttf');
-  }
 
-  @font-face {
-    font-family: 'Play-Regular';
-    src: url('/source/assets/fonts/Play-Regular.ttf');
-  }
   @font-face {
     font-family: 'Righteous-Regular';
     src: url('/source/assets/fonts/Righteous-Regular.ttf');
