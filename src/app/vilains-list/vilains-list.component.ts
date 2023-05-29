@@ -9,6 +9,8 @@ import Vilain from '../types/vilain.type';
 })
 export class VilainsListComponent implements OnInit {
 
+  vilainListTitle = 'Vilains List';
+
 vilains: Vilain[] = [
   {id : 1, name : 'The Joker', superPower : 'Insanity',realName : 'Unknown', picturePath : '../assets/Joker.png'},
   {id : 2, name : 'Lex Luthor', superPower : 'Human Brain',realName : 'Lex Luthor', picturePath : '../assets/LexLuthor.png'},

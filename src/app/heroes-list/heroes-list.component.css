@@ -1,65 +1,96 @@
 /* HeroesComponent's private CSS styles */
-.selected {
-    background-color: #CFD8DC !important;
-    color: white;
-    }
-    .heroes {
 
+/*--Title--*/
+
+ h2{ 
+    color:white;
+    width:100%;
+    height: 5%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*MainBox--hero list []*/
+
+.heroes {
+    /*--sizing--*/
+    width: 95%;
+    height: 30%;
+
+    /*--centering--*/
     margin: auto;
     padding: auto;
+
+    /*--Scroll--*/
     overflow-x: hidden;
-    overflow-y:scroll;  
-    width: 95%;
-    height: 40%;
+    overflow-y:scroll;
+
+    /*--Content--*/
     list-style-type: none;
     }
-/*gestion du scroll*/
-    .heroes::-webkit-scrollbar {
-        width: 15%; /* width of the entire scrollbar */
-      }
-      
 
-    .heroes li {
-    cursor: pointer;
-    position: relative;
-    left: 0;
-    background-color: #3dd4da;
-    margin: 10px;
-    padding:10px;
-    height: 10%;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    
+
+/*gestion du scroll*/
+
+.heroes::-webkit-scrollbar {
+        width: 15%; /* The scrollbar is hidden "tricky" */
     }
 
 
+/*--heroe list li normal behaviour--*/
+
+.heroes li {
+    cursor: pointer;
+
+   /* position: relative;*/
+
+    /*--centering--*/
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding:10px;
+    height:30%;
+
+    /*content*/
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgb(255, 217, 0);
+    border-radius: 13px;
+
+    color: white;
+ 
+    }
+
+/*--heroe list li interactive behaviour--*/
+
     .heroes li.selected {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
     color: rgb(255, 217, 0);
     }
     .heroes li:hover {
     color: #f80000;
-    background-color: #280a92;
-    left: .1em;
+    background-color: rgba(0, 0, 0, 0.5);
+  
     }
-    .heroes  .text {
-        
-    position: relative;
-    top: -3px;
-    
-    }
+
+/*-heroe list li span -*/
+
     .heroes .badge {
-width :10%;
-height: auto;
-background-color: #f80000;
+    width :50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f80000;
+    text-align: center;
+    line-height:300%;
+    
+
     }
 
     #heroId  {
-    font-size: medium;
+    font-size: larger;
     color : yellow;
     
-
     }
 
 .detail{

@@ -9,6 +9,8 @@ import Hero from '../types/hero.type';
 })
 export class HeroesListComponent implements OnInit {
 
+  heroListTitle ='Heroes List';
+
   heroes: Hero[] =[
     {id : 1 , name : 'BatMan', superPower:'Money', realName : 'Bruce Wayne', picturePath : '../assets/Batman.png'},
     {id : 2 , name : 'Deadpool', superPower:'UnKillable', realName : 'Wayde Wilson', picturePath : '../assets/Deadpool.png'},
