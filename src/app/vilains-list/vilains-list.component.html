@@ -1,8 +1,8 @@
 <h2>{{vilainListTitle}}</h2>
 <ul class="vilains">
   <li *ngFor="let vilain of vilains" [class.selected]="selectedVilain == vilain" (click)="selectVilain(vilain)">
-    <span class="badge"><p id="vilainId">{{ vilain.id }}</p></span>{{ vilain.name
-  }} </li>
+    <span class="badge"><p id="vilainId">{{ vilain.id }}</p></span> <span class="vilainTitle">{{ vilain.name
+  }} </span></li>
   </ul>
   <div class="detail">
 <app-vilain-details *ngIf="selectedVilain" [vilain]="selectedVilain"></app-vilain-details>

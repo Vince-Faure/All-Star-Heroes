@@ -52,7 +52,7 @@ h2{
     height:30%;
 
     /*content*/
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgb(129, 44, 44);
     border: 2px solid rgb(255, 217, 0);
     border-radius: 13px;
 
@@ -63,18 +63,17 @@ h2{
 /*--heroe list li interactive behaviour--*/
 
     .vilains li.selected {
-    background-color: rgba(255, 255, 255, 0.5) !important;
+    background-color: rgb(80, 47, 47) ;
     color: rgb(255, 217, 0);
     }
     .vilains li:hover {
     color: #f80000;
-    background-color: rgba(0, 0, 0, 0.5);
-  
+
     }
 
 /*-heroe list li span -*/
 
-    .vilains .badge {
+   .badge {
     width :50px;
     height: 50px;
     border-radius: 50%;
@@ -86,7 +85,7 @@ h2{
     }
 
     #vilainId  {
-    font-size: larger;
+    font-size: x-large;
     color : yellow;
     
     }
