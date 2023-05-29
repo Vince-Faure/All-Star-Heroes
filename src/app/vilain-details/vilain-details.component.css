@@ -1,28 +1,64 @@
+/*--Main box--*/
 #detailsVilain{
+    /*--Sizing--*/    
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: auto;
+    
+
+/*--Display mode--*/
     display:flex;
+    justify-content: space-between;
+    
+
+/*--Content--*/
     background-color : rgba(0,0,0,0.2);
+    border-radius: 30px;
 }
+
+h2{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
+/*--Left Side box/Right Side box_Sizing*/
+
+#sideInfo, #sidePicture{
+    width: 100%;
+    height: auto;
+}
+/*--Left Side Box--*/
 
 #sideInfo{
-    width: 50%;
-    height: 100%;
+    margin: 20px;
 }
 
-#sidePicture{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content:space-evenly;
-
+.textReferences{
+margin: 20px;
+color:white;
+font-size: larger;
 }
 
 
 
 #vilainPicture{
     width :auto;
+    height : auto;
+
+}
+/*--Right Side Box--*/
+
+#sidePicture{
+
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+#vilainPicture{
+    justify-content: center;
+    max-width :300px;
     height : auto;
 
 }

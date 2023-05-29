@@ -92,6 +92,9 @@ h2{
     }
 
 .detail{
-    width: 100%;
+    width: 95%;
     height: 60%;
+    margin: auto;
+    padding: auto;
+    
 }

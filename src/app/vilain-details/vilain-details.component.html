@@ -1,12 +1,12 @@
 <div id="detailsVilain" >
   <div id="sideInfo">
-    <h2>Détails de {{vilain.name | uppercase}} : </h2>
-    <div id="textReferences">
-      <div><span>Real Name : </span>{{vilain.realName}}</div>
-      <div><span>Powers : </span>{{vilain.superPower}}</div>
+    <h2>{{vilain.name | uppercase}} : </h2>
+    <div >
+      <div class="textReferences"><span>Real Name : </span>{{vilain.realName}}</div>
+      <div class="textReferences"><span>Powers : </span>{{vilain.superPower}}</div>
     </div>
   </div>
   <div id="sidePicture">
-     <img id="heroPicture" src={{vilain.picturePath}} alt="none">
+     <img id="vilainPicture" src={{vilain.picturePath}} alt="none">
   </div>
 </div>

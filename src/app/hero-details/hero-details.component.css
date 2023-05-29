@@ -1,29 +1,63 @@
+/*--Main box--*/
 #detailsHero{
+
+/*--Sizing--*/    
     width: 100%;
     height: 100%;
-    margin: 0;
-    display:flex;
-    background-color : rgba(0,0,0,0.2);
+    margin: auto;
+    
 
+/*--Display mode--*/
+    display:flex;
+    justify-content: space-between;
+    
+
+/*--Content--*/
+    background-color : rgba(0,0,0,0.2);
+    border-radius: 30px;
 }
+
+h2{
+    text-align: center;
+    font-size: x-large;
+    color: white;
+}
+
+
+
+/*--Left Side box/Right Side box_Sizing*/
+#sideInfo, #sidePicture{
+    width: 100%;
+    height: auto;
+}
+
+/*--Left Side Box--*/
 
 #sideInfo{
-    width: 50%;
-    height: 100%;
+    margin: 20px;
 }
+
+.textReferences{
+margin: 20px;
+color:white;
+font-size: larger;
+}
+
+
+/*--Right Side Box--*/
 
 #sidePicture{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content:space-evenly;
 
+    display:flex;
+    justify-content:center;
+    align-items:center
 }
 
-
-
 #heroPicture{
-    width :auto;
+    justify-content: center;
+    max-width :300px;
     height : auto;
 
 }
+
+
