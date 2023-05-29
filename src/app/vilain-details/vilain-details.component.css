@@ -31,16 +31,23 @@ h2{
 /*--Left Side box/Right Side box_Sizing*/
 
 #sideInfo, #sidePicture{
+    /*--Sizing--*/
     width: 100%;
     height: auto;
 }
 /*--Left Side Box--*/
 
 #sideInfo{
-    margin: 20px;
+    /*--Pseudo Reactive renndering--*/
+    max-width :100%;
+    height : auto;
+    /*--Content--*/
+    font-size: x-large;
+    margin: auto;
 }
 
 .textReferences{
+    
     font-family: 'RoBoto-Regular';
     margin: 20px;
     color:white;
@@ -61,7 +68,6 @@ h2{
 #vilainPicture{
     justify-content: center;
     max-width :100%;
-    
     height : auto;
     border: 2px solid yellow;
     border-radius: 25px;
