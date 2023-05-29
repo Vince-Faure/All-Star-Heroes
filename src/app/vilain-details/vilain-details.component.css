@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('/assets/fonts/Roboto-Regular.ttf');
+}
 /*--Main box--*/
 #detailsVilain{
     /*--Sizing--*/    
@@ -17,8 +21,10 @@
 }
 
 h2{
+    font-family: 'RoBoto-Regular';
+    letter-spacing: .6rem;
     text-align: center;
-    font-size: x-large;
+    font-size: xx-large;
     color: white;
 }
 
@@ -35,9 +41,10 @@ h2{
 }
 
 .textReferences{
-margin: 20px;
-color:white;
-font-size: larger;
+    font-family: 'RoBoto-Regular';
+    margin: 20px;
+    color:white;
+    font-size: larger;  
 }
 
 
