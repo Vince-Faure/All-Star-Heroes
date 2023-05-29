@@ -2,9 +2,9 @@
 
 /*--Title--*/
 
- h2{ 
-    color:white;
-    width:100%;
+h2 {
+    color: white;
+    width: 100%;
     height: 5%;
     text-align: center;
     margin-top: 5px;
@@ -25,84 +25,100 @@
 
     /*--Scroll--*/
     overflow-x: hidden;
-    overflow-y:scroll;
+    overflow-y: scroll;
 
     /*--Content--*/
     list-style-type: none;
-    
-    }
+
+}
 
 
 /*gestion du scroll*/
 
 .heroes::-webkit-scrollbar {
-        width: 15%; /* The scrollbar is hidden "tricky" */
-    }
+    width: 15%;
+    /* The scrollbar is hidden "tricky" */
+}
 
 
 /*--heroe list li normal behaviour--*/
 
 .heroes li {
+    /*--cursorstyle--*/
     cursor: pointer;
-
-   /* position: relative;*/
 
     /*--centering--*/
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    padding:10px;
-    height:30%;
+    padding: 10px;
+    height: 30%;
 
 
     /*content*/
     background-color: rgb(44, 44, 131);
     border: 2px solid rgb(255, 217, 0);
     border-radius: 13px;
-    
-
     color: white;
- 
-    }
+
+}
 
 /*--heroe list li interactive behaviour--*/
 
-    .heroes li.selected {
-    background-color:rgb(48, 47, 80);
+.heroes li.selected {
+    /*--background color change & font color change*/
+    background-color: rgb(48, 47, 80);
     color: rgb(255, 217, 0);
-    }
-    .heroes li:hover {
+}
+
+.heroes li:hover {
+    /*--font color change--*/
     color: #f80000;
-    
-  
-    }
+}
 
-/*-heroe list li span -*/
+/*-hero list li span -*/
 
-    .badge {
-    width :50px;
+.badge {
+    /*--Sizing--*/
+    width: 50px;
     height: 50px;
     border-radius: 50%;
+
+    /*--Centering--*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    /*--Content--*/
     background-color: #f80000;
-    text-align: center;
-    line-height:300%;
-    
+}
 
-    }
-
-    #heroId  {
+#heroId {
+    /*--font attribute*/
     font-size: x-large;
-    color : yellow;
-    
-    }
+    color: yellow;
 
-    
+}
 
-.detail{
+#heroTitle {
+    /*--Sizing--*/
+    width: 90%;
+    /*--Centering--*/
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+
+
+.detail {
+    /*--Sizing & Centering--*/
     width: 95%;
     height: 60%;
     margin: auto;
     padding: auto;
-    
-    
+
+
 }
