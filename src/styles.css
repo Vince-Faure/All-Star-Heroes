@@ -99,7 +99,7 @@ h2 {
 
 /*--Text Formating--*/      
     font-family: var(--characterTitle-font-family);
-    font-size: 3em;
+    font-size: 2.8em;
     color:black;
 
 /*--Sizing--*/    
@@ -260,7 +260,7 @@ color:yellow
 
 }
 
-#characterTitle {
+.characterTitle {
     font-family:var(--characterTitle-font-family) ;
     font-size: xx-large;
     
@@ -271,6 +271,18 @@ color:yellow
     justify-content: right;
     align-items: center
 }
+
+/*--Detail conainer in main container--*/
+
+.detail {
+    /*--Sizing & Centering--*/
+    width: 95%;
+    height: 60%;
+    margin: auto;
+    padding: auto;
+  }
+  
+
 
 
 
