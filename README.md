@@ -1,7 +1,8 @@
 # TourOfHeroes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
-Please be indulegent, this is my first remixed version of originally "tour of heroes" .
+Coded for chrome navigator
+Please be indulgent, this is my first remixed version of originally "tour of heroes" .
 It s called "All Star Comics"
 
 for any suggestion and or corrections feel free to mail me.
