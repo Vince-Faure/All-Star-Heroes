@@ -10,7 +10,13 @@ for any suggestion and or corrections feel free to mail me.
 run  `npm install'
 
 !!!!!!!! Very important !!!!!!!!!!!!
-and then run '$env:NODE_OPTIONS = "--openssl-legacy-provider"'
+In oreder to fix an error 
+
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+run '$env:NODE_OPTIONS = "--openssl-legacy-provider"'
 
 ## Development server
 
