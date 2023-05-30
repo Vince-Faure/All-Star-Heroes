@@ -6,6 +6,11 @@ It s called "All Star Comics"
 
 for any suggestion and or corrections feel free to mail me.
 
+# Funny stuff
+
+I know that VIllain is spelled uncorrectly .
+Changing it would be a mess in all the code !!
+
 ## install node js 
 run  `npm install'
 
