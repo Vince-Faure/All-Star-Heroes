@@ -5,11 +5,8 @@
     font-family: 'Righteous-Regular';
     src: url('/source/assets/fonts/Righteous-Regular.ttf');
   }
-  @font-face {
-    font-family: 'Roboto-Regular';
-    src: url('/source/assets/fonts/Roboto-Regular.ttf');
     
-  }
+  
   @font-face {
     font-family: 'Play-Bold';
     src: url('/assets/fonts/Play-Bold.ttf');
@@ -37,6 +34,7 @@
     --title-font-family: 'impact';
     --characterTitle-font-family: 'Play-Bold';
     --charactertText-font-family: 'Play-Regular';
+    --detailText-font-family: 'Roboto-Regular';
     --mainTitle-color:blue;
     --characterColor-color: white;
 
@@ -304,8 +302,8 @@ color:yellow
     }
     
     .titleDetail{
-        font-family: 'RoBoto-Regular';
-        letter-spacing: .6rem;
+        font-family:var(--characterTitle-font-family);
+        letter-spacing: .3rem;
         text-align: center;
         font-size: xx-large;
         color: white;
@@ -335,7 +333,7 @@ color:yellow
     
     .textReferences{
         
-        font-family: 'RoBoto-Regular';
+        font-family:var(--charactertText-font-family);
         margin: 20px;
         color:white;
         font-size: x-large;
