@@ -1,94 +1,31 @@
-/* HeroesComponent's private CSS styles */
-@font-face {
-    font-family: 'Play-Bold';
-    src: url('/assets/fonts/Play-Bold.ttf');
-  }
-
-  @font-face {
-    font-family: 'Play-Regular';
-    src: url('/assets/fonts/Play-Regular.ttf');
-  }
-
-/*--Title--*/
-
-h2 {
-    font-family: 'Play-Bold';
-    font-size: xx-large;
-    color: white;
-    width: 100%;
-    height: 5%;
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
+/* Heroesfont-size: xx-large;Component's private CSS styles */
 
 
-/*MainBox--hero list []*/
 
-.heroes {
-    /*--sizing--*/
-    width: 95%;
-    height: 30%;
-
-    /*--centering--*/
-    margin: auto;
-    padding: auto;
-
-    /*--Scroll--*/
-    overflow-x: hidden;
-    overflow-y: scroll;
-
-    /*--Content--*/
-    list-style-type: none;
-
-}
-
-
-/*gestion du scroll*/
-
-.heroes::-webkit-scrollbar {
-    width: 15%;
-    /* The scrollbar is hidden "tricky" */
-}
 
 
 /*--heroe list li normal behaviour--*/
 
-.heroes li {
-    /*--cursorstyle--*/
-    cursor: pointer;
-
-    /*--centering--*/
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    padding: 10px;
-    height: 30%;
-
-
+.character li {
+    
     /*content*/
-    background-color: rgb(44, 44, 131);
-    border: 4px solid rgb(255, 217, 0);
-    border-radius: 13px;
-    color: white;
+    background-color: var(--good-background-color);
+
 
 }
 
 /*--heroe list li interactive behaviour--*/
 
-.heroes li.selected {
+.character li.selected {
     /*--background color change & font color change*/
-    background-color: rgb(68, 64, 194);
-    color: rgb(255, 217, 0);
-    border-color:rgba(255, 217, 0,0.6) ;
+    background-color: darkblue;
+    color:black;
+    
+
+
 }
 
-.heroes li:hover {
-    /*--font color change--*/
-    color: #f80000;
-}
 
-/*-hero list li span -*/
 
 .badge {
     /*--Sizing--*/
@@ -109,7 +46,7 @@ h2 {
     background-color: #f80000;
 }
 
-#heroId {
+.characterId {
     /*--font attribute*/
     font-family:'Play-Bold' ;
     font-size: x-large;
@@ -117,9 +54,9 @@ h2 {
 
 }
 
-#heroTitle {
+#characterTitle {
     font-family:'Play-Regular' ;
-    font-size: xx-large;
+    
     
     /*--Sizing--*/
     width: 90%;

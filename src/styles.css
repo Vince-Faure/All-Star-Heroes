@@ -8,71 +8,270 @@
   @font-face {
     font-family: 'Roboto-Regular';
     src: url('/source/assets/fonts/Roboto-Regular.ttf');
+    
   }
+  @font-face {
+    font-family: 'Play-Bold';
+    src: url('/assets/fonts/Play-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Play-Regular';
+    src: url('/assets/fonts/Play-Regular.ttf');
+  }
+
+ :root{
+
+    /*--Borders--*/
+    --largeBorder-border: 4px solid rgb(255, 217, 0);
+    --mediumBorder-border: 2px solid rgb(255, 217, 0);
+
+    /*Main colors*/
+    --generic-background-color: black;
+    --other-background-color:red;
+    --neutral-background-color: #BCD0C780;
+    --good-background-color: #41658A;
+    --evil-background-color: #DF2935 ;
+
+    /*Main fonts*/
+    --title-font-family: 'impact';
+    --characterTitle-font-family: 'Play-Bold';
+    --charactertText-font-family: 'Play-Regular';
+    --mainTitle-color:blue;
+    --characterColor-color: white;
+
+    
+ }
+
+/*--Reseting margin/padding--*/
 
 *{
     margin: 0;
     padding: 0;
+
+    border-radius: 30px;
 }
+
+
 body {
-    background-color: black;
-    background-image:url('assets/comic_page_2_BW.jpg') ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 90% auto;
+    background-color: var(--generic-background-color);
+    /*background-image:url('assets/comic_page_2_BW.jpg');*/
+
+    
+    /*background-position: center;*/
+    background-size: 100% auto;
 
     }
 
 
 header {
-/*Taille*/
+
+/*--Sizing*/
     width: 80%;
     height: 25%;
-/*centrage du header*/
+
+/*--Centering*/
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-/*contenu*/
-    font-family: 'Righteous-Regular';
+    
+/*--Content & Text Formating */
     text-align: center;
-    background-color: rgb(255, 0, 0);
-    border: 4px solid rgb(255, 217, 0);
-    border-radius: 30px;
+    background-color: var(--other-background-color);
+    border: var(--largeBorder-border);
+    
 }
+
+
 h1 {
-    color: #369;
-    font-family: Impact;
+
+/*--Text Formating--*/    
+    color:var(--mainTitle-color);
+    font-family: var(--title-font-family);
     font-weight: 1;
     font-size: 500%;
     letter-spacing: 5px;
-    -webkit-text-stroke: 1px yellow;
+    -webkit-text-stroke: 2px yellow;
     }
-   /* h2, h3 {
-    color: #444;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    }
-*/
-    a {
-    margin-top: 20px;
-    font-family: Arial;
-    background-color: #eee;
-    border: none;
-    cursor: pointer;
-    cursor: hand;
-    padding: 5px 10px;
-    border-radius: 4px;
-    margin: 3rem 0rem;
-    color: #607D8B;
-    text-decoration: none;
-    }
-    a:hover {
-    background-color: #cfd8dc;
-    }
-    
 
-    /* everywhere else */
-    * {
-    font-family: Arial, Helvetica, sans-serif;
+
+h2 {
+
+/*--Text Formating--*/      
+    font-family: var(--characterTitle-font-family);
+    font-size: 3em;
+    color:black;
+
+/*--Sizing--*/    
+    width: 90%;
+    height: 5%;
+
+/*--Centering--*/ 
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*Main container (#mainbox)*/
+
+#mainBox{
+
+/*--Display--*/
+    display: flex;
+    flex-direction: column ;
+
+ /*--Sizing--*/    
+    width: 98%;
+    height:700px;
+
+/*--Centering--*/
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     }
+
+/*Main container (#mainbox) > Secondary Container (#upBox) */
+
+#upBox{
+
+/*--Display--*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+
+/*--Sizing--*/
+    width:96%;
+    height: 100%;
+
+/*--Centering--*/
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Main container (#mainbox) > Secondary Container (#upBox) > Left & Right Conatainers (#upLeftBox, #upRightBox) */
+
+#upLeftBox, #upRightBox {
+
+/*--Sizing--*/
+    width: 49%;
+    height: 100%;
+
+/*--Centering--*/
+    margin: auto;
+
+/*--Content--*/
+    background-color: var(--neutral-background-color);
+            
+    }
+
+
+/*--character list styles <ul>--*/
+
+.character{
+
+/*--Sizing--*/
+    width:95%;
+    height: 30%;
+
+/*--centering--*/
+    margin:auto;
+    padding: auto;
+
+/*--Scroll--*/
+    overflow-x: hidden;
+    overflow-y:scroll;
+
+/*--Content--*/
+    list-style-type:none;
+
+}
+
+.character::-webkit-scrollbar {
+    width: 15%;    /*The scrollbar is hidden "tricky"-*/ 
+}
+
+
+.character li {
+
+/*--Cursor Style--*/
+    cursor: pointer;
+
+/*--Centering--*/
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+
+ /*--Sizing--*/   
+    height: 30%;
+
+/*--Content--*/
+    Font-family: var(--charactertText-font-family);
+    background-color: var(--good-background-color);
+    border:var(--mediumBorder-border);
+    color:var(--characterColor-color);
+
+}
+
+/*--heroe list li interactive behaviour--*/
+
+.character li.selected {
+
+/*--background color change & font color change*/
+
+    border-color:rgba(0, 0, 0,0.4) ;
+    font-size: xx-large;
+}
+
+
+.character li:hover {
+
+/*--font color--*/
+color:yellow
+}
+
+/*-hero list li span -*/
+
+.badge {
+/*--Sizing--*/
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+/*--Centering--*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+/*--Content--*/
+    border: var(--mediumBorder-border);
+    background-color: #f80000;
+}
+
+.characterId {
+    /*--font attribute*/
+    font-family:var(--charactertText-font-family) ;
+    font-size: x-large;
+    color: yellow;
+
+}
+
+#characterTitle {
+    font-family:var(--characterTitle-font-family) ;
+    font-size: xx-large;
     
+    /*--Sizing--*/
+    width: 90%;
+    /*--Centering--*/
+    display: flex;
+    justify-content: right;
+    align-items: center
+}
+
+
+
+
