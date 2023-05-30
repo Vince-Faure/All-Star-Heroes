@@ -48,25 +48,6 @@
   background-color:var(--good-background-color);
 }
 
-.characterId {
-  /*--font attribute*/
-  font-family:'Play-Bold' ;
-  font-size: x-large;
-  color: yellow;
-
-}
-
-#characterTitle {
-  font-family:'Play-Regular' ;
-  font-size: xx-large;
-  
-  /*--Sizing--*/
-  width: 90%;
-  /*--Centering--*/
-  display: flex;
-  justify-content: right;
-  align-items: center
-}
 
 
 .detail {
